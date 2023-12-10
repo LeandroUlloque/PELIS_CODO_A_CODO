@@ -21,7 +21,7 @@ header{
     height: 70px;
     width: 100%;
     position: sticky;
-    z-index: 100;
+    z-index: 1110;
     top: 0;
 }
 /* PRIMERA BARRA DE NAVEGACION */
@@ -278,7 +278,7 @@ header .nav2 div .fondo2:hover{
     left: 50%;
     bottom: 5%;
     list-style: none;
-    z-index: 2;
+    z-index: 1112;
     transform: translateX(-50%);
 }
 .listslider li {
@@ -719,7 +719,7 @@ main h2{
 	justify-content: center;
 	display: flex;
 	visibility: hidden;
-    z-index: 11111;
+    z-index: 1;
 }
 
 .overlay.active {

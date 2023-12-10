@@ -1,29 +1,97 @@
-<!-- login.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iniciar Sesión - DEPELIS</title>
-    <!-- Agrega cualquier enlace a estilos o scripts necesarios aquí -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 DEPELIS 🎬</title>
+    <!-- estilos -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./styles/style.css">
+<link rel="stylesheet" href="./styles/login.css">
+<!------ Include the above in your HEAD tag ---------->
+ <!-- favicon -->
+ <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+ <!-- bootstrap-icons --> 
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <h1>Iniciar Sesión</h1>
+ <!-- INICIO DEL HEADER -->
+ <header>
+     <div class="nav1" id="header">
+         <a class="logo" href="./index.html"><img src="./img/logo.png" alt="logo" height="68px"></a>
+         <nav>
+             <a href="./index.html">Explorar</a>
+             <a href="#peliculas">Peliculas</a>
+             <a href="#series">Series</a>
+             <a href="#servicios">Servicios</a>
+             <a href="./pages/contacto.html">Contacto</a>
+             <a id="btn-abrir-popup" class="btn-abrir-popup">Usuarios</a>
+             
+         </nav>
+         <i class="bi bi-list"></i>
+     </div>
+     <div class="nav2">
+         <div>
+             
+             <a class="fondo" href="./login.html">Login</a>
+             <a class="fondo2" href="#">Registrarte</a>
+         </div>
+     <div>
+ </header>
+ <!-- FIN DEL HEADER -->
 
-    <!-- Aquí puedes agregar tu formulario de inicio de sesión -->
-    <form id="loginForm">
-        <label for="username">Usuario:</label>
-        <input type="text" id="username" name="username" required>
+ <!-- INICIO DE MAIN -->
+ <main>
 
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
 
-        <button type="submit">Iniciar Sesión</button>
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/New_user_icon-01.svg/512px-New_user_icon-01.svg.png?20160211171440" id="icon" height="170px" width="60px" />
+    </div>
+
+    <!-- Login Form -->
+    <form name=form action="./pelis.html">
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
+      <INPUT onclick=go() type=button value=Acceder>
     </form>
 
-    <!-- Puedes agregar más contenido según tus necesidades -->
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
 
-    <!-- Agrega cualquier script necesario para la validación de datos aquí -->
+  </div>
+</div>
+</main>
+<br><br><br><br><br><br>
 
+<!-- FIN DE MAIN -->
+
+<!-- FOOTER -->
+ <footer class="foot">
+    <a href="https://twitter.com/" target="_blank">
+        <img src="./img/twiter.png" alt="twiter" width="20px" height="20px">
+    </a> 
+    <a href="https://facebook.com/" target="_blank">
+        <img src="./img/face.png" alt="facebook" width="20px" height="20px">
+    </a> 
+    <a href="https://youtube.com/" target="_blank">
+        <img src="./img/you.png" alt="youtube" width="20px" height="20px">
+    </a>
+    <p>LAS MEJORES PELÍCULAS <b>&copy;DEPELIS.COM</b></p>
+</footer>
+<!-- FIN FOOTER -->
+
+<!-- javascript -->
+
+<script src="./js/login.js"></script>
 </body>
 </html>
