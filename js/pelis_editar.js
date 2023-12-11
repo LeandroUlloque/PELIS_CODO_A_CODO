@@ -10,7 +10,7 @@ const { createApp } = Vue
         imagen:"",
         stock:0,
         precio:0,
-        url:'http://marcerda.pythonanywhere.com/productos/'+id,
+        url:'https://leandroulloque.pythonanywhere.com/productos/'+id,
        }  
     },
     methods: {
