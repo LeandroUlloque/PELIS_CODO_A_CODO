@@ -16,8 +16,7 @@
         <div id="app" class="container">
             <h1>Todas la Peliculas</h1>
             <br>
-            <a  class="btn btn-primary" href="pelis_nuevo.html">Nuevo</a>
-            <br><br>
+           
             <div v-if="error">
                 <p>Lo sentimos , ........</p>
             </div>
@@ -36,7 +35,7 @@
                                     <th scope="col">Calificacion</th>
                                     <th scope="col">Año</th>
                                     <th scope="col">Imagen</th>
-                                    <th scope="col">Acciones</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
@@ -48,10 +47,7 @@
                                     <td>
                                         <img width="60"  :src="producto.imagen" :alt="producto.nombre">
                                     </td>
-                                    <td>
-                    			<a class="btn btn-primary" :href="'pelis_update.html?id='+ producto.id" >Editar</a>
-                                      <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
-                                    </td>
+                                  
                                 </tr>
                             </tbody>
                         </table>
@@ -78,6 +74,6 @@
     <script src="./js/main.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
     <script src="./js/pelis.js"></script>
-    <script src="./js/sesion.js"></script>
+    <script src="./js/sesionuser.js"></script>
 </body>
 </html>
